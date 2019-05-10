@@ -11,4 +11,5 @@ The database used here is a customer database from a mall. It includes customer 
 Let's start by importing modules and the database into Python.<br>
 <code>import pandas as pd</code><br>
 <code>import matplotlib as plt</code><br>
-
+<code>df = pd.read_csv('C:/Users/Emir/Desktop/Mall Customers.csv')</code><br>
+<code>df.head()</code><br>
