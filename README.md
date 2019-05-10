@@ -8,8 +8,8 @@ Normally, clustering gives better results when used together with principal comp
 <h2>Database</h2>
 The database used here is a customer database from a mall. It includes customer profile information and a previously determined spending score, which further makes things easy for a clustering analysis.
 <h2>Analysis</h2>
-Let's start by importing modules and the database into Python.
-'''
+Let's start by importing modules and the database into Python.<br>
+```
 import pandas as pd
 import matplotlib as plt
-'''
+```
