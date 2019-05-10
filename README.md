@@ -9,7 +9,7 @@ Normally, clustering gives better results when used together with principal comp
 The database used here is a customer database from a mall. It includes customer profile information and a previously determined spending score, which further makes things easy for a clustering analysis.
 <h2>Analysis</h2>
 Let's start by importing modules and the database into Python.<br><br>
-<code>import pandas as pd</code><br>
-<code>import matplotlib as plt</code><br>
-<code>df = pd.read_csv('C:/Users/Emir/Desktop/Mall Customers.csv')</code><br>
-<code>df.head()</code><br><br>
+<pre>import pandas as pd<br>
+import matplotlib as plt<br>
+df = pd.read_csv('C:/Users/Emir/Desktop/Mall Customers.csv')<br>
+df.head()</pre><br><br>
