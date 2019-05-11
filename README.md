@@ -190,5 +190,8 @@ The bandwidth feature determines how many observations the algorithm will use to
 Again, we'll only adjust two lines of our first code.
 <pre>from sklearn.cluster import MeanShift</pre>
 <pre>clusters = MeanShift(bandwidth=25).fit(x)</pre>
-After some more trial and error, using a bandwidth of 25 produced a result that resembles  what is visually obvious.
+After some more trial and error, using a bandwidth of 25 produced optimum results.
 <img src="https://github.com/EmirKorkutUnal/A-Comparison-of-Clustering-Algorithms-K-means-MeanShift-DBSCAN-in-Python/blob/master/Screenshots/5%20-%20ScatterMeanShift.JPG">
+Note that amongst the 3 methods on this page, MeanShift's solution resembles best what is visually obvious. This, however, is subject to change with every dataset examined.<br><br>
+Have a good day,<br>
+Emir Korkut Unal
