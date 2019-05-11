@@ -191,3 +191,4 @@ The bandwidth feature determines how many observations the algorithm will use to
 Again, we'll only adjust two lines of our first code.
 <pre>from sklearn.cluster import MeanShift</pre>
 <pre>clusters = MeanShift(bandwidth=25).fit(x)</pre>
+After some more trial and error, using a bandwidth of 25 produced a result that resembles  what is visually obvious.
