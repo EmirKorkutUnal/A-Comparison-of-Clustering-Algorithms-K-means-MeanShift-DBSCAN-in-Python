@@ -1,6 +1,7 @@
 <h1>A Comparison of Clustering Algorithms (K-means MeanShift DBSCAN) in Python</h1>
 This article compares 3 different clustering algorithms found in scikit-learn, Python's Machine Learning library. You'll be presented how these algorithms are used and optimized according to your needs.<br>
 The database used here can be found at Kaggle. You can download the database directly from <a href="https://www.kaggle.com/shwetabh123/mall-customers/downloads/mall-customers.zip/1">here</a>.
+More details about each module can be found at <a href="https://scikit-learn.org/stable/">scikit-learn website</a>.
 <h2>Definition of Clustering</h2>
 Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters). (<a href="https://en.wikipedia.org/wiki/Cluster_analysis".>Wikipedia</a>)<br>
 Clustering is basically grouping observations based on given characteristics.<br>
@@ -181,5 +182,12 @@ Cluster
  2    92
  3    31
  4    23
-dtype: int64<pre>
+dtype: int64</pre>
 As you can see, the smallest group really has only 10 observations, and 28 observations are not included in any of the groups.
+<h3>MeanShift</h3>
+MeanShift aims to find centroids in plots and labels observations to their nearest centroids. By default, it labels all observations; though this feature can be changed.<br>
+The bandwidth feature determines how many observations the algorithm will use to calculate means (<a href="https://softwareengineering.stackexchange.com/questions/388313/how-to-define-the-bandwidth-in-mean-shift-clustering">source</a>). You should adjust the bandwidth for the algorithm to work as you want it to. You might find it useful to take a look at <a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.estimate_bandwidth.html">scikit-learn's bandwidth estimator</a>.
+<br>
+Again, we'll only adjust two lines of our first code.
+<pre>from sklearn.cluster import MeanShift</pre>
+<pre>clusters = MeanShift(bandwidth=25).fit(x)</pre>
