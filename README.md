@@ -170,4 +170,6 @@ DBSCAN creates clusters in a different way than K-means. "min_samples=" allows y
 We will use the same code as above, changing only these 2 lines.
 <pre>from sklearn.cluster import DBSCAN</pre>
 <pre>dbscan = DBSCAN(eps=12, min_samples=10)</pre>
-Remember to change the epsilon (eps) and minimum cluster size according to your own needs and run the code as many times as you need with some variation of numbers to get the optimum results. Eps can also be a <i>float</i> number, meaning that decimals are allowed for this variable.
+Remember to change the epsilon (eps) and minimum cluster size according to your own needs and run the code as many times as you need with some variation of numbers to get the optimum results. Eps can also be a <i>float</i> number, meaning that decimals are allowed for this variable.<br>
+After some trial and error, using eps as 12 and min_samples as 10 gave a reasonable result.
+<img src="https://github.com/EmirKorkutUnal/A-Comparison-of-Clustering-Algorithms-K-means-MeanShift-DBSCAN-in-Python/blob/master/Screenshots/4%20-%20ScatterDBSCAN.JPG">
