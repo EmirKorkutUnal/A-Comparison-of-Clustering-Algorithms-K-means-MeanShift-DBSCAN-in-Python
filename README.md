@@ -75,6 +75,7 @@ A quick look at pairs of variables with scatter plot gives us what we need: Spen
 We can already see the approximate groups in this plot:
 <img src="https://github.com/EmirKorkutUnal/A-Comparison-of-Clustering-Algorithms-K-means-MeanShift-DBSCAN-in-Python/blob/master/Screenshots/2%20-%20ScatterApprox.jpg">
 Let's see how scikit-learn's clustering algorithms will group these observations.<br>
+<h3>K-means</h3>
 First we load the K-means module, then we create a database that only consists of the two variables we selected.<br>
 <pre>from sklearn.cluster import KMeans
 x = df.filter(['Annual Income (k$)','Spending Score (1-100)'])</pre>
@@ -158,3 +159,5 @@ dfClustered.rename(columns={0:'Cluster'}, inplace=True)</pre>
     </tr>
   </tbody>
 </table>
+Time to get our results:
+<pre>dfClustered.plot.scatter(x='Spending Score (1-100)', y='Annual Income (k$)', c='Cluster', cmap="gist_rainbow", figsize=(15,7))</pre>
