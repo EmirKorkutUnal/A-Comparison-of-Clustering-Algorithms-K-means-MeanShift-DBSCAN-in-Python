@@ -186,9 +186,9 @@ dtype: int64</pre>
 As you can see, the smallest group really has only 10 observations, and 28 observations are not included in any of the groups.
 <h3>MeanShift</h3>
 MeanShift aims to find centroids in plots and labels observations to their nearest centroids. By default, it labels all observations; though this feature can be changed.<br>
-The bandwidth feature determines how many observations the algorithm will use to calculate means (<a href="https://softwareengineering.stackexchange.com/questions/388313/how-to-define-the-bandwidth-in-mean-shift-clustering">source</a>). You should adjust the bandwidth for the algorithm to work as you want it to. You might find it useful to take a look at <a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.estimate_bandwidth.html">scikit-learn's bandwidth estimator</a>.
-<br>
+The bandwidth feature determines how many observations the algorithm will use to calculate means (<a href="https://softwareengineering.stackexchange.com/questions/388313/how-to-define-the-bandwidth-in-mean-shift-clustering">source</a>). You should adjust the bandwidth for the algorithm to work as you want it to. You might find it useful to take a look at <a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.estimate_bandwidth.html">scikit-learn's bandwidth estimator</a>, or get more information about a <a href="https://www.youtube.com/watch?v=k1alPDpSGBE">dynamically weighted bandwidth</a>.<br>
 Again, we'll only adjust two lines of our first code.
 <pre>from sklearn.cluster import MeanShift</pre>
 <pre>clusters = MeanShift(bandwidth=25).fit(x)</pre>
 After some more trial and error, using a bandwidth of 25 produced a result that resembles  what is visually obvious.
+<img src="https://github.com/EmirKorkutUnal/A-Comparison-of-Clustering-Algorithms-K-means-MeanShift-DBSCAN-in-Python/blob/master/Screenshots/5%20-%20ScatterMeanShift.JPG">
