@@ -78,8 +78,19 @@ Let's see how scikit-learn's clustering algorithms will group these observations
 First we load the K-means module, then we create a database that only consists of the two variables we selected.<br>
 <pre>from sklearn.cluster import KMeans
 x = df.filter(['Annual Income (k$)','Spending Score (1-100)'])</pre>
-Because we can obviously see that there are 5 clusters, we will force K-means to create exacylt 5 clusters for us.<br>
+Because we can obviously see that there are 5 clusters, we will force K-means to create exactly 5 clusters for us.<br>
 <pre>kmeans = KMeans(n_clusters=5)</pre>
 Now we can fit our data into the model.
 <pre>clusters = kmeans.fit(x)</pre>
-
+We can get the results by typing ".labels_" after the name of the model.
+<pre>clusters.labels_
+array([3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+       3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 0,
+       3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 1, 0, 1, 4, 1, 4, 1,
+       0, 1, 4, 1, 4, 1, 4, 1, 4, 1, 0, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1,
+       4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1,
+       4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1,
+       4, 1])</pre>
