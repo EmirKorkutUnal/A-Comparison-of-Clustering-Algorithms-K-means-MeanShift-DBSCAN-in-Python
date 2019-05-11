@@ -71,3 +71,4 @@ df.head()</pre><br>
 <br>
 A quick look at pairs of variables with scatterplot gives us what we need: Spending score and annual income make a perfect pair for clustering.
 <pre>df.plot.scatter(x='Spending Score (1-100)', y='Annual Income (k$)',  figsize=(15,7))</pre>
+<img src="https://github.com/EmirKorkutUnal/A-Comparison-of-Clustering-Algorithms-K-means-MeanShift-DBSCAN-in-Python/blob/master/Screenshots/1%20-%20ScatterClean.JPG">
