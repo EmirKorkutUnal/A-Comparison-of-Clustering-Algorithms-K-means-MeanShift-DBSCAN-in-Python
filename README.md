@@ -1,4 +1,4 @@
-<h1>A Comparison of Clustering Algorithms (K-means MeanShift DBSCAN) in Python</h1>
+<h1>A Comparison of Clustering Algorithms (K-means, MeanShift, DBSCAN) in Python</h1>
 This article compares 3 different clustering algorithms found in scikit-learn, Python's Machine Learning library. You'll be presented how these algorithms are used and optimized according to your needs.<br>
 The database used here can be found at Kaggle. You can download the database directly from <a href="https://www.kaggle.com/shwetabh123/mall-customers/downloads/mall-customers.zip/1">here</a>.
 More details about each module can be found at <a href="https://scikit-learn.org/stable/">scikit-learn website</a>.
