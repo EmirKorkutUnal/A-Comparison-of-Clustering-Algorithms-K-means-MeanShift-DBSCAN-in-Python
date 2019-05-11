@@ -163,3 +163,11 @@ dfClustered.rename(columns={0:'Cluster'}, inplace=True)</pre>
 Time to get our first results. "c=" will color the groups according to the 'Cluster' column, "cmap=" will use a specified scheme for colorization.
 <pre>dfClustered.plot.scatter(x='Spending Score (1-100)', y='Annual Income (k$)', c='Cluster', cmap="gist_rainbow", figsize=(15,7))</pre>
 <img src="https://github.com/EmirKorkutUnal/A-Comparison-of-Clustering-Algorithms-K-means-MeanShift-DBSCAN-in-Python/blob/master/Screenshots/3%20-%20ScatterKmeans.JPG">
+It looks pretty good; there are 3 observations one can argue that they would belong to the purple cluster rather than the red, also one observation could be classified within the green cluster instead of the red.<br>
+Let's look at how other algorithms would do the job.
+<h3>DBSCAN</h3>
+DBSCAN creates clusters in a different way than K-means. "min_samples=" allows you to specify a minimum cluster size, and "eps=" is the maximum distance between two obsertavions for them to be considered within the same cluster. This approach allows a more flexible clustering operation, giving control from algorithm to the analyst. Based on these 2 inputs, DBSCAN can also identify some observations as outliers and not include them in any cluster. These observations are labeled with a cluster number of "-1".<br><br>
+We will use the same code as above, changing only these 2 lines.
+<pre>from sklearn.cluster import DBSCAN</pre>
+<pre>dbscan = DBSCAN(eps=12, min_samples=10)</pre>
+Remember to change the epsilon (eps) and minimum cluster size according to your own needs and run the code as many times as you need with some variation of numbers to get the optimum results. Eps can also be a <i>float</i> number, meaning that decimals are allowed for this variable.
