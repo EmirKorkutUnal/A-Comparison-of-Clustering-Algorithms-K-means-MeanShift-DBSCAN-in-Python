@@ -10,6 +10,24 @@ The database used here is a customer database from a mall. It includes customer 
 <h2>Analysis</h2>
 Let's start by importing modules and the database into Python.<br><br>
 <pre>import pandas as pd
-import matplotlib as plt
+import matplotlib.pyplot as plt
 df = pd.read_csv('C:/Users/Emir/Desktop/Mall Customers.csv')
 df.head()</pre><br>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
