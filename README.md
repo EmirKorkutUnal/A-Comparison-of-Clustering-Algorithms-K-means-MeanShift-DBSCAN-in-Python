@@ -159,5 +159,5 @@ dfClustered.rename(columns={0:'Cluster'}, inplace=True)</pre>
     </tr>
   </tbody>
 </table>
-Time to get our results:
+Time to get our first results. "c=" will color the groups according to the 'Cluster' column, "cmap=" will use a specified scheme for colorization.
 <pre>dfClustered.plot.scatter(x='Spending Score (1-100)', y='Annual Income (k$)', c='Cluster', cmap="gist_rainbow", figsize=(15,7))</pre>
