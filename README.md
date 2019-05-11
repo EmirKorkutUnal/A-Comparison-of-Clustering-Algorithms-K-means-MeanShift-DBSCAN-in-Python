@@ -14,27 +14,57 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('C:/Users/Emir/Desktop/Mall Customers.csv')
 df.head()</pre><br>
 
-<table>
+<table border="1" class="dataframe">
   <thead>
-    <tr>
-      <th>Month</th>
-      <th>Savings</th>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Annual Income (k$)</th>
+      <th>Spending Score (1-100)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>January</td>
-      <td>$100</td>
+      <th>0</th>
+      <td>1</td>
+      <td>Male</td>
+      <td>19</td>
+      <td>15</td>
+      <td>39</td>
     </tr>
     <tr>
-      <td>February</td>
-      <td>$80</td>
+      <th>1</th>
+      <td>2</td>
+      <td>Male</td>
+      <td>21</td>
+      <td>15</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Female</td>
+      <td>20</td>
+      <td>16</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Female</td>
+      <td>23</td>
+      <td>16</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Female</td>
+      <td>31</td>
+      <td>17</td>
+      <td>40</td>
     </tr>
   </tbody>
-  <tfoot>
-    <tr>
-      <td>Sum</td>
-      <td>$180</td>
-    </tr>
-  </tfoot>
 </table>
