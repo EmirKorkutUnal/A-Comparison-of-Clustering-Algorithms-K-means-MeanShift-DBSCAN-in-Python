@@ -76,6 +76,7 @@ We can already see the approximate groups in this plot:
 <img src="https://github.com/EmirKorkutUnal/A-Comparison-of-Clustering-Algorithms-K-means-MeanShift-DBSCAN-in-Python/blob/master/Screenshots/2%20-%20ScatterApprox.jpg">
 Let's see how scikit-learn's clustering algorithms will group these observations.<br>
 <h3>K-means</h3>
+K-means algorithm works by specifying a certain number of clusters beforehand.<br>
 First we load the K-means module, then we create a database that only consists of the two variables we selected.<br>
 <pre>from sklearn.cluster import KMeans
 x = df.filter(['Annual Income (k$)','Spending Score (1-100)'])</pre>
@@ -161,3 +162,4 @@ dfClustered.rename(columns={0:'Cluster'}, inplace=True)</pre>
 </table>
 Time to get our first results. "c=" will color the groups according to the 'Cluster' column, "cmap=" will use a specified scheme for colorization.
 <pre>dfClustered.plot.scatter(x='Spending Score (1-100)', y='Annual Income (k$)', c='Cluster', cmap="gist_rainbow", figsize=(15,7))</pre>
+<img src="https://github.com/EmirKorkutUnal/A-Comparison-of-Clustering-Algorithms-K-means-MeanShift-DBSCAN-in-Python/blob/master/Screenshots/3%20-%20ScatterKmeans.JPG">
