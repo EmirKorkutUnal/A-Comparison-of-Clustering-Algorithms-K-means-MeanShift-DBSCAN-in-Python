@@ -13,7 +13,6 @@ Let's start by importing modules and the database into Python.<br><br>
 import matplotlib.pyplot as plt
 df = pd.read_csv('C:/Users/Emir/Desktop/Mall Customers.csv')
 df.head()</pre><br>
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -68,3 +67,7 @@ df.head()</pre><br>
     </tr>
   </tbody>
 </table>
+
+<br>
+A quick look at pairs of variables with scatterplot gives us what we need: Spending score and annual income make a perfect pair for clustering.
+<pre>df.plot.scatter(x='Spending Score (1-100)', y='Annual Income (k$)',  figsize=(15,7))</pre>
